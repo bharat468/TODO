@@ -78,6 +78,10 @@ input {
   transition: all 0.2s ease-in-out;
 }
 
+.checkbox{
+    flex: none;
+}
+
 input:focus {
   outline: none;
   border-color: #007bff;
@@ -98,4 +102,10 @@ button {
 button:hover {
   background-color: #004204;
   transform: scale(1.05);
+}
+
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transition: all 0.3s ease;
 }

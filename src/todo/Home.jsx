@@ -17,7 +17,7 @@ function Home() {
                     return obj.id === editId ? { ...obj, task: input } : obj
                 })
             )
-            setIsEditing(false)
+            setIsEditing(false) 
             SetEditId(null)
             setInput("")
 
@@ -44,6 +44,9 @@ function Home() {
         setInput(objectToEdit.task)
     }
 
+    function heandleComplete(){
+    }
+
     return (
         <div className="todo">
             <Form
@@ -54,7 +57,8 @@ function Home() {
             <List
                 tasks={tasks}
                 handleDelete={handleDelete}
-                handleEdit={handleEdit} />
+                handleEdit={handleEdit} 
+                heandleComplete = {heandleComplete}/>
         </div>
     )
 }
