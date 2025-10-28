@@ -30,7 +30,7 @@ function Home() {
     }
 
     function handleDelete(obj) {
-        setTasks(tasks.filter((task) => { task.id !== obj })
+        setTasks(tasks.filter((task) => { return task.id !== obj })
         )
     }
 
