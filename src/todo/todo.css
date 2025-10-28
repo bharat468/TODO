@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 106, 0);
+}
+
+.todo{
+    width: 70vw;
+    margin: 40px auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+li {
+  background-color: #f7f7f7;
+  margin: 10px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  background-color: #e9f5ff;
+  transform: scale(1.02);
+}
+
+li svg {
+  margin-left: 8px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+li svg:first-of-type {
+  color: red;
+}
+
+li svg:last-of-type {
+  color: #007bff;
+}
+
+li svg:hover {
+  opacity: 0.7;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+button {
+  background-color: #008702;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background-color: #004204;
+  transform: scale(1.05);
+}
