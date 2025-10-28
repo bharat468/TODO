@@ -23,6 +23,7 @@ function Home() {
 
         }
         else {
+            if (!input.trim()) return
             setTasks([...tasks, { id: Date.now(), task: input }])
         }
         setInput("")
